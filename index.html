@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="static/css/frozen.css"  media="all">
+    <link rel="stylesheet" type="text/css" href="20001/static/css/style.css"  media="all">
+</head>
+<body>
+    <header id="header" class="ui-header ui-header-positive ui-border-b">
+        <ul class="ui-tiled ui-border-t">
+            <li class="active" data-href="index.html" ><i class="ui-icon-emo"></i>岛国</li>
+            <li data-href="zhainan.html" ><i class="ui-icon-dressup"></i>宅男</li>
+            <li data-href="dapian.html" ><i class="ui-icon-wallet"></i>成片</li>
+            <li data-href="about.html" ><i class="ui-icon-personal"></i>登陆</li>
+        </ul>
+    </header>
+    <section class="ui-slider">
+        <ul class="ui-slider-content">
+            <li class="">
+                <span class="toplay" title="伊素婉性感火辣热舞诱惑直播" mp4="http://qn.jdsjsj.com/1456042509421c.mp4" style="background-image: url('http://img.fcbird.org/20001/upfile/v1/1456042049751a.jpg');"><em>伊素婉性感火辣热舞诱惑直播</em></span>
+            </li>
+            <li class="">
+                <span class="toplay" title="朴妮麦火辣激情全裸热舞直播" mp4="http://qn.jdsjsj.com/1456041971049C.mp4" style="background-image: url('http://img.fcbird.org/20001/upfile/v1/1456041893735a.jpg');"><em>朴妮麦火辣激情全裸热舞直播</em></span>
+            </li>
+            <li class="current">
+                <span class="toplay" title="直播福利性感女主播热舞热辣身材" mp4="http://qn.jdsjsj.com/1456041880100C.mp4" style="background-image: url('http://img.fcbird.org/20001/upfile/v1/1456041831631a.jpg');"><em>直播福利性感女主播热舞热辣身材</em></span>
+            </li>
+            <li class="">
+                <span class="toplay" title="美女热舞诱惑宅男的世界" mp4="http://qn.jdsjsj.com/1456041805392C.mp4" style="background-image: url('http://img.fcbird.org/20001/upfile/v1/1456041733039a.jpg');"><em>美女热舞诱惑宅男的世界</em></span>
+            </li>
+        </ul>
+        <ul class="ui-slider-indicators"><li class="">1</li><li class="">2</li><li class="current">3</li><li class="">4</li></ul>
+    </section>
+    <section class="ui-panel">
+        <h2 class="ui-arrowlink">岛国系列<span class="ui-panel-subtitle">更多无码高清</span></h2>
+        <ul class="ui-grid-trisect" id="vlist">
+            <li v-cloak v-for="item in data" v-on:click="play(item.title,item.mp4)">
+                {{ item.tag }}
+                <div class="ui-grid-trisect-img">
+                    <span style="background-image:url({{picurl}}{{item.pic}})"></span>
+                </div>
+                <h4 class="ui-nowrap">{{item.title}}</h4>
+                <!-- <p class="ui-nowrap ui-txt-info">...</p> -->
+                <span class="cnl-tag">{{item.runtime}}</span>
+            </li>
+        </ul>
+    </section>
+    <div style="text-align: center; font-size: 16px;" class="topay">更多精华资源，仅限会员专享。。。</div>
+    <!-- 提示付费窗口 -->
+    <div id="paybox" class="ui-dialog">
+        <div class="ui-dialog-cnt">
+            <a class="ui-icon-close-page" data-role="button"></a>
+            <div class="info">
+                <h4>试看结束,充值VIP观看更多高清爽片</h4>
+                <p class="ui-txt-red">（只需支付一次，享受所有影片观看权限！）</p>
+                <p>VIP注意事项：<br>1.未满18岁用户，禁止购买观看。<br>2.一次性支付，享有所有影片观看权限。<br></p>
+                <div class="payBtn"><a class="paybtn weixin" data-role="button">确定</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- 提示付费窗口 -->
+    <div id="paybox2" class="ui-dialog">
+        <div class="ui-dialog-cnt">
+            <a class="ui-icon-close-page" data-role="button"></a>
+            <div class="info">
+                <h4>试看结束,充值VIP观看更多高清爽片</h4>
+                <p class="ui-txt-red">（只需支付一次，享受所有影片观看权限！）</p>
+                <p>VIP注意事项：<br>1.未满18岁用户，禁止购买观看。<br>2.一次性支付，享有所有影片观看权限。<br></p>
+                <div class="payBtn"><a class="paybtn weixin" data-role="button">确定</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- 充值提醒 -->
+    <div style="display: none;" class="ui-newstips-wrap flip-top">
+        <div class="ui-newstips">
+            <i class="ui-icon-checked-s"></i>
+            <div>第<span id="showno">1989</span>位会员充值成功！</div>
+        </div>
+    </div>
+    <script>
+        var param = "";
+        var ispay = false;
+        var showjs = "1";
+        var cid = 0;
+        var pop = false;
+    </script>
+    <script src="20001/static/js/zepto.min.js" ></script>
+    <script src="20001/static/js/vue.min.js" ></script>
+    <script src="20001/static/js/frozen.js" ></script>
+    <div style="display: none;"></div>
+</body>
+</html>

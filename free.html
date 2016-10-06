@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>免费领终身会员</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="static/css/frozen.css" media="all">
+<link rel="stylesheet" type="text/css" href="20001/static/css/style.css" media="all">
+<style>
+.iframediv {position:absolute;top:45px;left:0;}
+.ui-dialog-cnt {width:90%;}
+.scan {background:url('static/images/loading.gif') no-repeat center 25%;background-size:120px 120px;}
+.ui-icon-close-page {position: absolute; right: 7px; top: 0;}
+/*.ui-btn-group button { background-color: #44B549!important; color: #fff;}*/
+body{font-family:Arial; font-size:14px;line-height:180%;padding-top: 20px;} /*总控制，可忽略此行*/
+table tr:first-child{background:#0066CC; color:#fff;font-weight:bold;} /*第一行标题蓝色背景*/
+table{border-top:1pt solid #C1DAD7;border-left:1pt solid #C1DAD7;margin: 0 auto;} 
+td{ padding:5px 10px; text-align:center;border-right:1pt solid #C1DAD7;border-bottom:1pt solid #C1DAD7;}
+tr:nth-of-type(odd){ background:#F5FAFA;} /* odd 标识奇数行，even标识偶数行 */
+tr:hover{ background: #E0F0F0;} /*鼠标悬停后表格背景颜色*/
+</style>
+</head>
+<body>
+<header id="header" class="ui-header ui-header-positive ui-border-b">
+    <i class="ui-icon-return"></i>
+    <h1>任意安装2款免费领终身会员</h1>
+</header>
+<div class="videoimg"><img src="static/images/banneranimate.gif" width="100%" alt="">
+<table width='0' border='0' cellspacing='0' cellpadding='0' align='center'>
+  <tr>
+    <td>软件名城</td>
+    <td>系统</td>
+    <td>大小</td>
+    <td>要求</td>
+  </tr>
+  <tr>
+    <td><a href="http://d.xiusse.com/down+61.html?c=10102768214136"><img src="/app/xiuseanzhuo.png"></a></td>
+    <td>苹果IOS</td>
+    <td>19.65MB</td>
+    <td><a href="http://d.xiusse.com/down+61.html?c=10102768214136">安装注册</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://d1.showself.com/download/showself_android-s214134_release.apk"><img src="/app/xiuseanzhuo.png"></a></td>
+    <td>安卓APP</td>
+    <td>19.65MB</td>
+    <td><a href="http://d1.showself.com/download/showself_android-s214134_release.apk">安装注册</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://api.95xiu.com/api/iosspread.php?channel=i700292"><img src="/app/95yese.png"></a></td>
+    <td>苹果IOS</td>
+    <td>8.64MB</td>
+    <td><a href="http://api.95xiu.com/api/iosspread.php?channel=i700292">安装注册</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://down.95you.com/apk7/7801006.apk"><img src="/app/95yese.png"></a></td>
+    <td>安卓APP</td>
+    <td>8.64MB</td>
+    <td><a href="http://down.95you.com/apk7/7801006.apk">安装注册</a></td>
+  </tr>
+</table>
+</div>
+<div id="checkdesk">
+    <div class="info">
+        <h4>活动：<em class="ui-txt-red">安装注册2款软件免费领终身会员</em></h4>
+        <p class="ui-txt-red">（安卓APP和苹果IOS，选择自己机型安装）</p>
+        <p>活动注意事项：<br>1.工作人员24小时轮流，正常审核时间为2-3天。<br>2.注册时请添加手机或邮箱，审核通过后发放识别码，请注意查收。<br>3.安装后未注册，则不计入有效数量。<br>4.当天安装注册，第二天未联网打开软件，则不计入有效数量。</p>
+    </div>
+</div>
+<div class="inapptips" style="display: none;"><div class="inapptipsbody"><img src="static/images/tips_wx.png"></div></div>
+<!-- 提示付费窗口 -->
+<div id="paybox" class="ui-dialog">
+    <div class="ui-dialog-cnt">
+        <a class="ui-icon-close-page" data-role="button"></a>
+        <div class="info">
+            <h4>试看结束,充值VIP观看更多高清爽片</h4>
+            <p class="ui-txt-red">（只需支付一次，享受所有影片观看权限！）</p>
+            <p>VIP注意事项：<br>1.未满18岁用户，禁止购买观看。<br>2.一次性支付，享有所有影片观看权限。<br></p>
+            <div class="payBtn"><a class="paybtn weixin" data-role="button">确定</a></div>
+        </div>
+    </div>
+</div>
+<!-- 充值提醒 -->
+<div class="ui-newstips-wrap">
+    <div class="ui-newstips">
+        <i class="ui-icon-checked-s"></i>
+        <div>第<span id="showno">1989</span>位会员充值成功！</div>
+    </div>
+</div>
+<script>
+    var param = "";
+    var ispay = false;
+    var showjs = "";
+    var cid = 0;
+    var pop = false;
+</script>
+    <script src="20001/static/js/md5.js"></script>
+    <script src="20001/static/js/zepto.min.js"></script>
+    <script src="20001/static/js/vue.min.js"></script>
+    <script src="20001/static/js/frozen.js"></script>
+<div style="display: none;"> </div>
+</div>
+</body>
+</html>
